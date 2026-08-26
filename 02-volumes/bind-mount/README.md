@@ -16,7 +16,7 @@ Host
   ↓
 Container
 /app
-
+```
 
 
 ## Key Takeaways
