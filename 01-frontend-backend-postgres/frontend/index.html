@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Docker Demo</title>
+</head>
+
+<body>
+
+  <h1>Docker Frontend</h1>
+
+  <button onclick="loadUsers()">
+    Load Users
+  </button>
+
+  <pre id="output"></pre>
+
+  <script>
+    async function loadUsers() {
+      const response = await fetch("http://localhost:5000/api/users");
+
+      const users = await response.json();
+
+      document.getElementById("output").textContent =
+        JSON.stringify(users, null, 2);
+    }
+  </script>
+
+</body>
+</html>
+
