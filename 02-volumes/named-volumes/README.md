@@ -2,10 +2,10 @@
 
 ## Commands practiced
 
-docker volume create mydata
-docker volume ls
-docker volume inspect mydata
-docker volume rm mydata
+- docker volume create mydata
+- docker volume ls
+- docker volume inspect mydata
+- docker volume rm mydata
 
 ## Mounting a volume
 
